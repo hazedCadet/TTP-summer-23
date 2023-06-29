@@ -49,7 +49,7 @@ li {
     text-transform: uppercase;
 } */
 
-/* Colors */
+/* ---------- Colors ------------ */
 
 /* body{
     font-size: 24px;
@@ -68,7 +68,7 @@ h2{
     color: #EE4B2B;
 } */
 
-/* Units and Sizes */
+/* ---------- Units and Sizes ------------ */
 
 /* h1{
     /* pizel size ABSOLUTE */
@@ -83,7 +83,7 @@ h2{
     /* font-size: 3em; */
 /* } */
 
-/* Box Model */
+/* ---------- Box Model ------------ */
 /* 
 * {
     margin: 0;
@@ -101,6 +101,7 @@ h2{
     margin: 5px;
 /} */
 
+/*
 * {
     margin: 0;
     padding: 0;
@@ -117,10 +118,159 @@ main {
     text-align: left;
     text-indent: 40px;
     line-height: 1.5;
-    /* letter spacing: .2em; */
+    /* letter spacing: .2em; ----
     word-spacing: .8em;
     color: red;
     font-weight: 600;
     font-style: italic;
 }
+*/
 
+/* ---------- Links ------------ */
+
+/* 
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: red;
+    /* list-style-image: url("../images/jamaica.jpeg") ------
+}
+
+ul li {
+    color: green;
+}
+
+/* select specific li children ---
+ul li:nth-child(2) {
+    color: red;
+} 
+
+ul li:nth-child(3) {
+    color: red;
+}
+ ---------- Stylize Bullet Points ------------ 
+
+ul ::marker {
+    color: purple;
+    font-family: fantasy;
+    font-size: 2rem;
+    content: 10% off;   
+} */
+
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: right;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: blue;
+    background-color: red;
+}
+
+li {
+    display: inline-block;
+} */
+
+/* ---------- Display ------------ */
+
+/* 
+body {
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+.columns {
+    column-count: 4;
+    column-width: 250px;
+    column-rule: 2px solid black;
+    column-gap: 5rem;
+}
+
+.columns p{
+    margin-top: 0;
+}
+
+.columns .quote {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    column-span: all;
+}
+
+.nowrap {
+    white-space: nowrap;
+} */
+
+/* ---------- Position ------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+.outer-container {
+    border: 3px solid red;
+    width: 900px;
+    height: 500px;
+    margin: 90px;
+}
+
+.inner-container {
+    border: 3px solid blue;
+    width: 700px;
+    height: 200px;
+    margin: 100px;
+    position: relative;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: green;
+    padding: 1rem;
+}
+
+.absoute {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
