@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ? */
+
+.animation:hover {
+    width: 400px;
+    height: 400px;
+    background-color: lightpink;
+}
+
+keyframe-animation {
+    width: 200px;
+    height: 500px;
+    margin: 50px;
+    padding: 20px;
+    background-color: darkblue;
+    color: white;
+    font-family: Verdana, Geneva, Thoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 5ms;
+}
+
+@keyframes spin {
+
+}
