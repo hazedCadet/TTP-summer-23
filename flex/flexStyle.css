@@ -1,0 +1,78 @@
+/* Basic container setup wth flex */
+
+
+/* .container {
+    display: flex;
+} */
+
+/* setup for items */
+.item {
+    margin: 10px;
+    padding: 20px;
+    background: darkblue;
+    color: white;
+}
+
+ /* ---------- Flex Direction ------------ */
+
+ .container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* ---------- Flex Wrap ------------ */
+
+.container {
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+}
+
+
+/* ---------- Flex Items ------------ */
+
+/* ---------- Flex Grow ------------ */
+.item1 {
+    flex-grow: 2;
+}
+
+/* ---------- Flex Shrink ------------ */
+
+.item2 {
+    flex-shrink: 2;
+}
+
+/* ---------- Flex Basis ------------ */
+
+.item1 {
+    flex-basis: 100px;
+}
+
+.item2 {
+    flex-basis: 200px;
+}
+
+/* ---------- Flex Item II ------------ */
+
+/* ---------- Flex setup II ------------ */
+
+/* ---------- Other  Flexbox Properties ------------ */
+
+.container {
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.container {
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+}
+
