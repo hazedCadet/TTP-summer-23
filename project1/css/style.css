@@ -1,0 +1,148 @@
+/* ------------- index.html ------------- */
+
+/* -------------   navbar   ------------- */
+
+ .navbar{
+    background-color: rgb(147, 23, 25);
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li{
+    display: inline;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover{
+     color: rgb(147, 23, 25);
+     background-color: black;
+ }
+
+ .navbar h1{
+    color: white;
+ }
+
+
+/* -------------  about  ------------- */
+
+.about {
+    background: url("/project1/images/0-re4-leon-house.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0.9;
+    background-attachment: scroll;
+    min-height: 500px;
+ }
+
+.info-text p{
+    opacity: 1;
+    color: white;
+    max-width: 400px;
+    /* margin-top: 15%; */
+    padding-top: 10%;
+    margin-left: 15%;
+ }
+
+
+
+/* -------------  village  ------------- */
+
+.village-area {
+    background: url("/project1/images/backgrounds/town.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0.9;
+    background-attachment: scroll;
+    min-height: 500px;
+ }
+
+.village-area h2{
+    color: rgb(147, 23, 25);
+}
+
+ .village-content{
+    display: flex;
+    justify-content: center;
+ }
+
+ .enemy-cards{
+    align-self: center;
+    width: 50%;
+    margin: 100px;
+ }
+
+/* -------------  castle  ------------- */
+
+.castle-area {
+    background: url("/project1/images/backgrounds/castle.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0.9;
+    background-attachment: scroll;
+    min-height: 500px;
+ }
+
+ .castle-area h2{
+    color: rgb(147, 23, 25);
+}
+ .castle-content{
+    display: flex;
+    justify-content: center;
+ }
+
+
+
+/* -------------  island  ------------- */
+
+.island-area {
+    background: url("/project1/images/backgrounds/island.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0.9;
+    background-attachment: scroll;
+    min-height: 500px;
+ }
+
+ .island-area h2{
+    color: rgb(147, 23, 25);
+}
+
+ .island-content{
+    display: flex;
+    justify-content: center;
+ }
+
+
+ 
+ /* -------------  footer  ------------- */
+
+ .footer {
+    background-color: black;
+    color: grey;
+    text-align: center;
+ }
+
+ .footer ul{
+    list-style-type: none;
+ }
+
+ .footer li{
+    display: inline;
+ }
+ .footer a{
+    text-decoration: none;
+    color: grey;
+ }
+
+ .footer a:hover{
+    color: rgb(147, 23, 25);
+ }
