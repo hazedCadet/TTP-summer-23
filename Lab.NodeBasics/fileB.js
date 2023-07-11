@@ -12,5 +12,8 @@ module.exports = () => {
 */
 
 // STEP 3
-
+/*
 console.log('fileB is being run!');
+*/
+
+// BONUS
