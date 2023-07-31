@@ -1,0 +1,172 @@
+/* styling*/
+
+
+/* entire document */
+
+* {
+    color: blue;
+}
+
+
+/* body */
+
+body {
+    background-color:rgb(210, 255, 255);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* rules wrapper */
+
+#rulesWrapper {
+    display: inline-block;
+    border: 3px solid blue;
+    border-radius: 9px;
+    margin: 3px;
+    padding: 5px 0px 0px 5px;
+    height: 180px;
+    width: 25%;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* game wrapper */
+
+#gameWrapper{
+    display: inline-block;
+    border: 3px solid blue;
+    border-radius: 9px;
+    margin: 3px;
+    padding: 5px 0px 0px 5px;
+    height: 180px;
+    width: 25%;
+}
+
+#userGuessContainer{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+#userGuess {
+    display: flex;
+    width: 60px;
+    text-align: center;
+}
+
+#guessText {
+    text-align: center;
+}
+#hintText {
+    text-align: center;
+}
+
+
+#gameButtons{
+    display: flex;
+    justify-content: center;
+}
+
+#hintBtn{
+    background-color: rgb(142, 219, 255);
+    border: solid rgb(0, 68, 99);
+    color: black;
+    margin: 5px;
+}
+#hintBtn:active{
+    background-color: rgb(72, 140, 172);
+}
+#hintBtn:disabled{
+    background-color: rgb(72, 140, 172);
+}
+
+#submitBtn{
+    background-color: rgb(155, 235, 155);
+    border: solid rgb(0, 116, 0);
+    color: black;
+    margin: 5px;
+}
+#submitBtn:active{
+    background-color: rgb(85, 157, 85);
+}
+#submitBtn:disabled{
+    background-color: rgb(85, 157, 85);
+}
+
+#resetBtn{
+    background-color: rgb(232, 138, 138);
+    border: solid rgb(118, 0, 0);
+    color: black;
+    margin: 5px;
+}
+#resetBtn:active{
+    background-color: rgb(187, 99, 99);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* game variables wrapper */
+
+#gameVariablesWrapper{
+    display: inline-block;
+    border: 3px solid blue;
+    border-radius: 9px;
+    margin: 3px;
+    padding: 5px 0px 0px 5px;
+    height: 180px;
+    width: 25%;
+}
+
+#guessesContainer{
+    border: 3px solid red;
+    margin-right: 3px;
+    padding: 0px px 0px 0px;
+    border-radius: 5px;
+}
+
+ul {
+    border: 3px solid orange;
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+li {
+    border: 3px solid green;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    align-items: center;
+    width: 100%;
+    border-radius: 3px;
+}
+
+#guess1{}
+#guess2{}
+#guess3{}
+#guess4{}
+#guess5{}
+#guess6{}
+#guess7{}
+#guess8{}
+#guess9{}
+#guess10{}
+

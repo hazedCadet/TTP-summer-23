@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the Number</title>
+</head>
+<body>
+    
+    <h1>Guessing Game</h1>
+    <h3>Guess a number between 1 and 100</h3>
+
+<!-- div containing the whole game -->
+    <div id="gameContainer">
+<!-- div for the container holding the rules -->
+    <div id="rulesWrapper">
+        <h4>RULES</h4>
+        <p>Guess a number between 1 and 100</p>
+        <p>You are given 10 chances to guess the number correctly</p>
+    </div>
+
+<!-- div for the container holding the main game coponents:
+    1) user input field
+    2) guess feedback
+    3) buttons for:
+        hint, submit, and reset
+-->
+    <div id="gameWrapper">
+<!-- 1) user input section -->
+        <div id="userGuessContainer">
+            <input type="number" placeholder="1...100" id="userGuess"></input>
+        </div>
+<!-- 2) guess feedback -->
+        <p id="guessText"><br></p>
+<!-- 3) buttons -->
+        <div id="gameButtons">
+            <button type="button" id="hintBtn">hint</button>
+            <button type="button" id="submitBtn">try</button>
+            <button type="button" id="resetBtn">reset</button>
+        </div>
+<!-- hint text -->
+        <p id="hintText"></p>
+    </div>
+
+<!-- div container holding guesses remaining and highscore -->
+    <div id="gameVariablesWrapper">
+        <p id="highscoreText">Highscore: </p>
+        <p id="guessesLeft">10 Guesses Remaining</p>
+        <div id="guessesContainer">
+        <ul>
+            <li class="guessedNumber" id="guess1">1</li>
+            <li class="guessedNumber" id="guess2">2</li>
+            <li class="guessedNumber" id="guess3">3</li>
+            <li class="guessedNumber" id="guess4">4</li>
+            <li class="guessedNumber" id="guess5">5</li>
+        </ul>
+        <ul>
+            <li class="guessedNumber" id="guess6">6</li>
+            <li class="guessedNumber" id="guess7">7</li>
+            <li class="guessedNumber" id="guess8">8</li>
+            <li class="guessedNumber" id="guess9">9</li>
+            <li class="guessedNumber" id="guess10">10</li>
+        </ul>
+        </div>
+    </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
