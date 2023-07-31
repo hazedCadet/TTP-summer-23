@@ -60,11 +60,18 @@ function toggleButton(id, bool){
 // add guess to list in order to keep track of guesses
 function addGuess(guess, temp){
     changeMsg(`guess${11-score}`, guess.toString());
-    if (temp == 'warm'){
-        document.getElementById(`guess${11-score}`).style.backgroundColor = (232, 138, 138);
+    if (temp == 'hot'){
+        document.getElementById(`guess${11-score}box`).style.backgroundColor = "rgb(232, 138, 138)"; // change background to temp color
+        document.getElementById(`guess${11-score}`).style.color = "rgb(71, 0, 0)"; // match text color
         return;
     }
-    document.getElementById(`guess${11-score}`).style.backgroundColor = (0, 68, 99);
+    else if (temp == 'warm'){
+        document.getElementById(`guess${11-score}box`).style.backgroundColor = "rgb(255, 184, 85)"; // change background to temp color
+        document.getElementById(`guess${11-score}`).style.color = "rgb(100, 58, 0)"; // match text color
+        return;
+    }
+    document.getElementById(`guess${11-score}box`).style.backgroundColor = "rgb(0, 68, 99)"; // change background to temp color
+    document.getElementById(`guess${11-score}`).style.color = "rgb(127, 215, 255)"; // match text color
     return;
 }
 
@@ -216,9 +223,14 @@ document.getElementById('resetBtn').addEventListener('click', function (){
 // reset guesses table
 let i=1;
     while (i <= score){
-        changeMsg(`guess${i}`, `${i}`);
+        changeMsg(`guess${i}`, ``);
+        document.getElementById(`guess${i}box`).style.backgroundColor = "";
         i++;
     }
+// reset hint text
+    changeMsg('hintText', '');
+// reset user input
+    changeMsg('userGuess', '');
 
 
 });

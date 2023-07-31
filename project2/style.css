@@ -133,14 +133,16 @@ h3{
 }
 
 #guessesContainer{
-    border: 3px solid red;
+/* this line for dev purpose */
+    /* border: 3px solid red; */
     margin-right: 3px;
     padding: 0px px 0px 0px;
     border-radius: 5px;
 }
 
 ul {
-    border: 3px solid orange;
+/* this line for dev purpose */
+    /* border: 3px solid orange; */
     display: flex;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -149,7 +151,9 @@ ul {
 }
 
 li {
-    border: 3px solid green;
+/* these lines for dev purpose */
+    /* border: 3px solid green; */
+    /* background-color: rgb(100, 58, 0); */
     display: flex;
     justify-content: center;
     list-style: none;
@@ -159,7 +163,7 @@ li {
     border-radius: 3px;
 }
 
-#guess1{}
+/* #guess1{}
 #guess2{}
 #guess3{}
 #guess4{}
@@ -168,5 +172,5 @@ li {
 #guess7{}
 #guess8{}
 #guess9{}
-#guess10{}
+#guess10{} */
 
