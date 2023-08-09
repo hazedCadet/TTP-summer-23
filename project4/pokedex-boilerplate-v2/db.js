@@ -1,11 +1,9 @@
 const { Sequelize } = require("sequelize");
-const db = new Sequelize("pokedex", {
-    host: "localhost",
-    dialect: "postgres"
+
+// connect to db
+const sequelize = new Sequelize("pokedex", "", "", {
+  host: "localhost",
+  dialect: "postgres",
 });
 
-const Pokemon = db.define("pokemon", {
-    name,
-    type,
-
-});
+module.exports = sequelize;
