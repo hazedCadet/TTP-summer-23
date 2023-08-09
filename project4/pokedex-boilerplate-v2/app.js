@@ -12,24 +12,34 @@ const app = express();
 app.use(morgan("dev"));
 app.use(express.static(__dirname + "/public"));
 
-// - - - - - - - - - - - - - route for all pokemon - - - - - - - - - - - - -
-app.get("/", (req, res) => {
-  const pokemon = pokeBank.list();
-  res.send(pokeList(pokemon));
-});
+(async () => {
+  try {
+    await db.sync();
+    console.log("Models synced with database");
+  } catch (error) {
+    console.error(error);
+  }
+})();
 
-app.get("/pokemon/", async (req, res, next) => {
+// - - - - - - - - - - - - - route for all pokemon - - - - - - - - - - - - -
+// app.get("/", (req, res) => {
+//   const pokemon = pokeBank.list();
+//   res.send(pokeList(pokemon));
+// });
+
+app.get("/pokemon", async (req, res, next) => {
   const pokemon = await Pokemon.findAll();
   res.json(pokemon);
 });
 
 
 // - - - - - - - - - - - - - route pokemon by id - - - - - - - - - - - - -
-app.get("/pokemon/:id", (req, res) => {
-  const pokemon = pokeBank.find(req.params.id);
-  res.send(pokeDetails(pokemon));
-});
-app.get("api/pokemon/:id", async (req, res) => {
+// app.get("/pokemon/:id", (req, res) => {
+//   const pokemon = pokeBank.find(req.params.id);
+//   res.send(pokeDetails(pokemon));
+// });
+
+app.get("/pokemon/:id", async (req, res) => {
   const pokemon = await Pokemon.findByPk(req.params.id);
   if (pokemon) {
     res.json(pokemon);
