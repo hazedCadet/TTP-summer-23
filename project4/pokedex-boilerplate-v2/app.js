@@ -52,7 +52,11 @@ app.get("/pokemon/:id", async (req, res) => {
 // - - - - - - - - - - - - - route to create new pokemon - - - - - - - - - - - - -
 app.post("/pokemon", async (req, res) => {
   const newPokemon = await Pokemon.create(req.body);
-  res.json(newPokemon);
+  if (newPokemon) {
+    res.json(newPokemon);
+  } else {
+    res.status(404).send("Pokemon not captured");
+  }
 });
 
 
@@ -63,7 +67,7 @@ app.put("/pokemon/:id", async (req, res) => {
     await pokemon.update(req.body);
     res.json(pokemon);
   } else {
-    res.status(404).send("Pokemon not found");
+    res.status(404).send("Pokemon not able to be traded");
   }
 });
 
@@ -74,7 +78,7 @@ app.delete("/pokemon/:id", async (req, res) => {
     await pokemon.destroy();
     res.status(204).send();
   } else {
-    res.status(404).send("Pokemon not found");
+    res.status(404).send("Pokemon not able to be released");
   }
 });
 

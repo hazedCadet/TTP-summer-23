@@ -36,6 +36,7 @@ const Trainer = require("./models/Trainer");
 // -- INSERT INTO "Pokemon" ("name", "type", "trainer", "date", "image", "TrainerId") VALUES ('Jigglypuff', 'Normal/Fairy', 'Misty', '2023-07-19', 'https://archives.bulbagarden.net/media/upload/3/3a/0039Jigglypuff.png', 2);
 
 // -- INSERT INTO "Pokemon" ("name", "type", "trainer", "date", "image", "TrainerId") VALUES ('Gengar', 'Ghost/Poison', 'Brock', '2023-07-19', 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png', 3);
+
     await Pokemon.create({
         name: "Pikachu",
         type: "Electric",
